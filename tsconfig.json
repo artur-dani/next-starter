@@ -33,8 +33,7 @@
     "**/*.mjs",
     ".next/types/**/*.ts",
     ".eslintrc.js",
-    "prettier.config.js",
-    ".lintstagedrc.js"
+    "prettier.config.js"
   ],
   "exclude": ["node_modules"]
 }
