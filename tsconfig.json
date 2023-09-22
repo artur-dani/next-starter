@@ -26,6 +26,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mjs", ".next/types/**/*.ts", ".eslintrc.js", "prettier.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mjs",
+    ".next/types/**/*.ts",
+    ".eslintrc.js",
+    "prettier.config.js",
+    ".lintstagedrc.js"
+  ],
   "exclude": ["node_modules"]
 }
