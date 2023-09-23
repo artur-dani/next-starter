@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { clientEnv, serverEnv } from "@/env"
 
@@ -9,6 +10,7 @@ export default function Home() {
       <div>
         <Button>Click me</Button>
       </div>
+      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
     </>
   )
 }
