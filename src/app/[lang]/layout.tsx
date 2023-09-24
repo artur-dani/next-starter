@@ -12,9 +12,14 @@ export const metadata: Metadata = {
   description: "Next.js starter template with TypeScript, Tailwind CSS, and ESLint",
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type RootLayoutProps = {
+  children: React.ReactNode
+  params: { lang: string }
+}
+
+export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={params.lang} suppressHydrationWarning>
       <body className={cn("min-h-screen antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
